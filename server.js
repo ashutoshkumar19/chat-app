@@ -2,7 +2,19 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-app.use(cors());
+app.use(
+  cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: [
+      'Content-Type',
+      'Authorization',
+      'Access-Control-Allow-Origin',
+      'Access-Control-Allow-Methods',
+      'Access-Control-Allow-Headers',
+    ],
+  }),
+);
 
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
