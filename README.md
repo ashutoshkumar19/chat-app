@@ -1,11 +1,18 @@
-# Steps to run this project:
+### Steps to run this project locally:
 
-First of all, run _"npm install"_ in both root and client folders.
+1. npm install
+2. npm install --prefix client
+3. npm run build --prefix client
+4. npm start
 
-Then start both client and server using single command:
+#### or using a single command:
 
-- npm run dev
+* npm install && npm install --prefix client && npm run build --prefix client && npm start
 
-# View this project live:
+####  Then view your project running locally on:
+http://localhost:80
 
-https://realtime-chat-2020.herokuapp.com
+### View this project live:
+
+https://quick-chat-r3ks.onrender.com/
+
