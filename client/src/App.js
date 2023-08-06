@@ -87,14 +87,7 @@ const App = () => {
                 />
               );
             } else {
-              return (
-                <ChatComponent
-                  key={index}
-                  socket={socket}
-                  userState={userState}
-                  chatBoxItem={item}
-                />
-              );
+              return <ChatComponent key={index} socket={socket} userState={userState} chatBoxItem={item} />;
             }
           })}
         </Fragment>
