@@ -4,6 +4,7 @@ RUN mkdir -p /home/app
 
 COPY . /home/app
 
+EXPOSE 80
 EXPOSE 3000
 EXPOSE 3001
 
